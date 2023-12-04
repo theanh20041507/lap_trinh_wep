@@ -1,0 +1,458 @@
+* {
+
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: "Lato", "san-serif";
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.content {
+    /* width: 1250px; */
+    width: 80%;
+    /* margin-left: 80px; */
+    /* padding-left: 45px; */
+    margin: 0 auto;
+}
+
+h1 {
+    margin-bottom: 100px;
+}
+
+
+
+/*-------------------------------------------------------*/
+/*----------------Chỉnh phần content trái----------------*/
+/*-------------------------------------------------------*/
+
+.content-left {
+    /* float: left; */
+    width: 650px;
+}
+.content-left__container {
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.remove {
+    color: #000;
+    margin-right: 20px;
+    font-size: 25px;
+
+}
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    margin-right: 30px;
+}
+
+.text-content {
+    color: #000;
+    margin: 0px 72px 0px 0px;
+
+}
+
+.input-text {
+    width: 40px;
+    font-size: 20px;
+    border: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid #777;
+    text-align: center;
+}
+
+.list-product-content-left {
+    padding: 0;
+}
+
+
+
+.list-product-content-left li {
+    margin-bottom: 50px;
+    padding: 0;
+}
+
+.list-product-content-left li bdi {
+    color: #777;
+}
+
+.button-in-text {
+    margin-left: 40px;
+    margin-right: 280px;
+    color: #000;
+}
+
+.button-in-text:hover {
+    transition: 0.3s;
+    color: brown;
+}
+
+.text {
+    margin-bottom: 100px;
+    margin-top: 40px;
+}
+
+.list-product-content-left hr {
+    margin-bottom: 50px;
+}
+.third-content-left--img {
+    position: relative;
+    width: 150px;
+}
+.third-content-left img {
+    width: 150px;
+}
+
+.third-content-left h4,
+span {
+    color: #000;
+}
+
+.third-content-left h4:hover {
+    transition: 0.3s;
+    color: var(--hover-color);
+    cursor: pointer;
+}
+.third-content-left--img:hover .action__hover--small {
+    display: block ;
+    cursor: pointer;
+}
+.name__product:hover .action__hover--small {
+    display: block;
+}
+.name__product:hover {
+    color: var(--hover-color);
+}
+
+/*  action hover small */
+.third-content-left h4:hover .action__hover--small {
+    display: block;
+}
+.action__hover--small {
+    position: absolute;
+    top: -10px;
+    /* right: 0px; */
+    list-style: none;
+    left: 74px;
+    font-size: 2rem;
+    display: none;
+}
+.action__hover1-item--small {
+    list-style: none;
+    /* padding: 0; */
+    position: relative;
+    
+}
+.action__hover1-item--small:hover .action__hover1-item__info--small {
+    display: block;
+}
+
+.action__hover1-item__info--small {
+    position: absolute;
+    font-size: 1rem;
+    top: 0px;
+    background-color: var(--hover-color);
+    left: -111px;
+    width: 108px;
+    padding: 0px 8px;
+    border-radius: 2px;
+    line-height: 1.6rem;
+    display: none;
+    
+}
+.action__hover1-item__info--small::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 100%;
+    margin-top: 3px; /* Điều chỉnh giữa chiều cao của mũi nhọn */
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--hover-color);
+}
+.action__hover2-item__info--small p,
+.action__hover1-item__info--small p {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.action__hover2-list--small i,
+.action__hover1-item--small i {
+    padding: 5px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    background-color: white;
+    cursor: pointer;
+    
+}
+.action__hover2-list--small i:hover,
+.action__hover1-item--small i:hover {
+    color: var(--hover-color);
+}
+.action__hover2-list--small {
+    list-style: none;
+    position: absolute;
+    bottom: -92px;
+}
+.action__hover2-item--small {
+    position: relative;
+}
+.action__hover2-item--small:hover .action__hover2-item__info--small {
+    display: block;
+}
+.action__hover2-item__info--small {
+    position: absolute;
+    font-size: 1rem;
+    top: 0px;
+    background-color: var(--hover-color);
+    /* left: -160px; */
+    width: 109px;
+    padding: 0 -71px;
+    right: 30px;
+    border-radius: 2px;
+    display: none;
+}
+.action__hover2-item__info--small::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 100%;
+    margin-top: 3px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--hover-color);
+}
+.action__hover2-list--small i {
+    padding: 5px;
+    bottom: 0;
+}
+/*-------------------------------------------------------*/
+/*----------------Chỉnh phần content phải----------------*/
+/*-------------------------------------------------------*/
+
+
+.content-right {
+    float: right;
+    width: 497px;
+}
+
+
+.first-content-right {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    margin-bottom: 25px;
+}
+
+.second-content-right th {
+    float: left;
+    width: 300px;
+}
+
+.second-content-right-right {
+    float: right;
+    width: 390px;
+    color: #777;
+
+}
+
+.woocommerce-shipping-destination {
+    width: 170px;
+    margin-left: 45px;
+    margin-bottom: 20px;
+}
+
+#shipping_method li {
+    margin-bottom: 15px;
+    margin-left: 38px;
+}
+
+#shipping_method {
+    padding: 0;
+}
+
+.shipping-calculator-button {
+    color: #777;
+    margin-left: 45px;
+
+}
+
+.third-content-right {
+    margin-top: 55px;
+    margin-bottom: 40px;
+}
+
+.third-content-right {
+    display: grid;
+    grid-template-columns: 150px 150px;
+}
+
+.third-content-right bdi {
+    font-size: 30px;
+}
+
+.four-content-right a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.four-content-right a:hover {
+    transition: 0.5s;
+    color: brown;
+}
+
+
+.four-content-right {
+    background-color: #000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 317px;
+    margin-bottom: 30px;
+}
+
+.five-content-right a {
+    margin-left: 115px;
+    color: #000;
+
+}
+
+
+.footer-content-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 1150px;
+}
+
+.service {
+
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    column-gap: 70px;
+    margin-left: 0px;
+
+}
+
+/*----------------------------------------------------*/
+/*-----------------Chỉnh Phần footer------------------*/
+/*----------------------------------------------------*/
+
+/*Chỉnh phần service trong footer*/
+.service {
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    column-gap: 70px;
+}
+
+.note {
+    margin-top: 5px;
+    margin-left: 25px;
+    opacity: 0.8;
+    /*độ mờ chữ*/
+}
+
+/*----------------------------------------------------*/
+/*-----------------Chỉnh Phần footer-Content-1----------*/
+/*----------------------------------------------------*/
+
+
+
+.search-product {
+    float: left;
+}
+
+.search-product input,
+.search-product button {
+    padding: 10px;
+    /* Đặt khoảng cách (padding) cho các phần tử */
+    font-size: inherit;
+    /* Kế thừa kích thước phông chữ từ .search-product */
+}
+
+.search-product button {
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+
+}
+
+.footer-content-1 {
+    margin-bottom: 60px;
+    margin-top: 50px;
+}
+
+.columns a {
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.7;
+}
+
+.columns a:hover {
+    transition: 0.3s;
+    color: gray;
+}
+
+.columns li {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+.text-columns {
+    margin-bottom: 20px
+}
+
+.columns-footer {
+    display: grid;
+    grid-template-columns: 174px 174px 174px;
+    float: right;
+    width: 600px;
+
+}
+
+.columns-footer ul {
+    padding: 0;
+}
+
+/*----------------------------------------------------*/
+/*-----------------Chỉnh Phần footer-Content-2--------*/
+/*----------------------------------------------------*/
+
+
+
+.list-items a {
+    text-decoration: none;
+    margin-right: 30px;
+    color: #000000;
+}
+
+.list-items:hover a {
+    transition: 0.5s;
+    color: gray;
+}
+
+.footer-text {
+    margin-top: 20px;
+
+    margin-bottom: 100px;
+    color: #777777;
+}

@@ -1,0 +1,111 @@
+:root {
+    --black-color: #000000;
+    --opacity-color: #777777;
+    --hover-color: #C4B583;
+    --white-color: #ccc;
+    --opacity2-color: #d9d9d9;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    line-height: 1.6;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+/* animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+
+    }
+
+    to {
+        opacity: 1;
+
+    }
+}
+
+@keyframes slideFromTop {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(20%);
+    }
+}
+
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.99);
+        /* Thu nhỏ lại 1% */
+    }
+}
+
+
+
+@keyframes slideInFromTopLeft {
+    0% {
+        transform: translate(-100%, -100%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes colorChange {
+    from {
+        background-color: transparent;
+    }
+
+    to {
+        background-color: var(--hover-color);
+        /* Use your desired color with an alpha value for transparency */
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
