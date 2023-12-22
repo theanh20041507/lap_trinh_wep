@@ -24,8 +24,11 @@ html {
 }
 .nb-fourth-img__2 {
     position: absolute;
-    left: 20%;
-    top: 44px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
     display: none;
 }
 .nb-fourth-img__3 {
